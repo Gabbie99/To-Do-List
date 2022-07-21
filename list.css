@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: linear-gradient(to right, rgb(182, 167, 170), rgb(210, 125, 218));
+  }
+
+.nav {
+    background-color: rgb(77, 24, 77);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-decoration:underline ;
+}
+li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+li:nth-child(even) {
+    background: #dacaca;
+    border-radius: 6px;
+  }
+  
+li:hover {
+    background: rgb(148, 68, 152);
+    transition:.10s ease-out;
+    transform: rotateZ(0);
+  }
+ul li.done {
+    text-decoration:line-through ;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+/* li.done::before {
+    content: " ";
+    position: absolute;
+    border:1px solid #fff;
+    border-width: 0 3px 3px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(40deg);
+    height: 15px;
+    width: 7px;
+  } */
+.nav:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+#input {
+    margin: 0;
+    border: none;
+    border-radius: 3px;
+    width: 50%;
+    padding: 15px;
+    float: left;
+    font-size: 16px;
+  }
+#addlist {
+    padding: 15px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 3px;
+  }
+  
+  .addlist:hover {
+    background-color: #bbb;
+  }
